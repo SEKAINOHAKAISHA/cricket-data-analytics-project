@@ -1,0 +1,46 @@
+# This is README file
+
+We are using STAR Schema here. This means we have a central fact table surrounded by the dimensional table.
+The fact table contains the main info, and the dimensional table contains info about attributes of fact table.
+
+Like, batting summary is a fact table and player info is a dimensional table that contains information about the players in the fact table.
+
+Similarly, for bowling summary.
+
+We import the data into the workspace.
+  We then use Power Query to transform data for subsequent data analysis.
+We removed any duplicates from dim_players.
+For removing duplicates,we can sort the data and glance over it.
+
+here, we have performed the removal of duplicated data using the values of 2 columns.
+
+Now, we are going to add a column 'stage' based on date of the match. We will use Conditional column feature in PowerBI's Add Column header.
+
+Based on the fact that matches played before 22nd Oct 2022 were Qualifiers, we will classify matches as Qualifiers or Super 12.
+
+We change values in out column to binary, 0 if not out and 1 if out.
+
+Trim batsmanname and bowlername for any leading or trailing whitespaces.
+
+After data transformation, we save and apply changes.
+
+Measures :-
+
+Batting:-
+	1. Total Runs : Total runs scored by each batsman based on fact_batting_scorecard[runs]
+	2. Total balls faced : Total balls a player has faced based on fact_batting_scorecard[balls]
+	3. Total Innings Batted : Total innings played by a player based on COUNT of match_ids for the player
+	4. Total Innings Dismissed : Total innings in which the player got dismissed based on COUNT of fact_batting_scorecard[out]
+	5. Batting Average : Total runs divided by Total innings dismissed based on previous measures
+	6. Strike Rate : Runs score per 100 balls multiplied by 100
+	7. Batting Position : Average of batting positions played by the player
+	SUGGESTION : USE MODE in case of BATTING POSITION rather than AVERAGE
+
+
+The squad information is incomplete for Sri Lanka thus Wanindu Hasaranga and Pramod Madushan's names are not in the squad even though they played for Sri Lanka in the T20 World Cup. Added that information.
+
+Afghanistan's Naveen-ul-Haq and Namibia's Jan Nicol Lofte-Eaton names are not properly formatted. Their new name values are Naveen Ul Haq and Jan Nicol Lofte Eaton
+
+Max O' Dowd's name is also not formatted correctly. Modified to Max O Dowd as in system.
+
+Jj Smit changed to JJ Smit in dim_players.

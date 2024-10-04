@@ -1,0 +1,105 @@
+CRITERIA for SELECTION of PLAYERS :-
+
+1) OPENERS(2 players):
+
+-----------------------------------------------------------------------------------
+|	PARAMETER	|	DESCRIPTION			| 	CRITERIA  |
+-----------------------------------------------------------------------------------
+|   Batting Average	|    Average runs scored per innings	|	> 30      |
+|			|    (based on number of dismissals)	|                 |
+-----------------------------------------------------------------------------------	
+|   Strike Rate		|  Number of runs scored per 100 balls	|	> 140	  |
+-----------------------------------------------------------------------------------
+|   Innings Batted	|     Total innings batted		| 	> 3	  |
+-----------------------------------------------------------------------------------
+|   Boundary %  	|    % of runs scored in boundaries	| 	> 50	  |
+-----------------------------------------------------------------------------------
+|   Batting Position	|  Position at which the player batted	| 	< 4	  |
+-----------------------------------------------------------------------------------
+
+SUGGESTION : remove boundary %, change criteria of innings batted >=3.
+
+2)ANCHORS/MIDDLE ORDER(3 players):
+
+-----------------------------------------------------------------------------------
+|	PARAMETER	|	DESCRIPTION			| 	CRITERIA  |
+-----------------------------------------------------------------------------------
+|   Batting Average	|    Average runs scored per innings	|	> 40      |
+|			|    (based on number of dismissals)	|                 |
+-----------------------------------------------------------------------------------	
+|   Strike Rate		|  Number of runs scored per 100 balls	|	> 125	  |
+-----------------------------------------------------------------------------------
+|   Innings Batted	|     Total innings batted		| 	> 3	  |
+-----------------------------------------------------------------------------------
+|   Avg. Balls Faced	| Average balls faced by the batter in	| 	> 20	  |
+|			|     	    an innings 			|		  |
+-----------------------------------------------------------------------------------
+|   Batting Position	|  Position at which the player batted	| 	> 2 	  |
+-----------------------------------------------------------------------------------
+
+SUGGESTION : batting position should be less than 6
+
+3)FINISHER/LOWER ORDER ANCHOR(2 players):
+
+-----------------------------------------------------------------------------------
+|	PARAMETER	|	DESCRIPTION			| 	CRITERIA  |
+-----------------------------------------------------------------------------------
+|   Batting Average	|    Average runs scored per innings	|	> 25      |
+|			|    (based on number of dismissals)	|                 |
+-----------------------------------------------------------------------------------	
+|   Strike Rate		|  Number of runs scored per 100 balls	|	> 130	  |
+-----------------------------------------------------------------------------------
+|   Innings Batted	|     Total innings batted		| 	> 3	  |
+-----------------------------------------------------------------------------------
+|   Avg. Balls Faced	| Average balls faced by the batter in	| 	> 12	  |
+|			|     	    an innings 			|		  |
+-----------------------------------------------------------------------------------
+|   Batting Position	|  Position at which the player batted	| 	> 4 	  |
+-----------------------------------------------------------------------------------
+|   Innings Bowled	|  Total Innings Bowled by the bowler	| 	> 1 	  |
+-----------------------------------------------------------------------------------
+
+SUGGESTION : innings bowled should be >= 0
+
+4)ALL-ROUNDERS/LOWER ORDER(2 players) :
+
+-----------------------------------------------------------------------------------
+|	PARAMETER	|	DESCRIPTION			| 	CRITERIA  |
+-----------------------------------------------------------------------------------
+|   Batting Average	|    Average runs scored per innings	|	> 15      |
+|			|    (based on number of dismissals)	|                 |
+-----------------------------------------------------------------------------------	
+|   Strike Rate		|  Number of runs scored per 100 balls	|	> 140	  |
+-----------------------------------------------------------------------------------
+|   Innings Batted	|     Total innings batted		| 	> 2	  |
+-----------------------------------------------------------------------------------
+|   Batting Position	|  Position at which the player batted	| 	> 4 	  |
+-----------------------------------------------------------------------------------
+|   Innings Bowled	|  Total Innings Bowled by the bowler	| 	> 2	  |
+-----------------------------------------------------------------------------------
+|   Bowling Economy	|  Average runs allowed per over	| 	< 7 	  |
+-----------------------------------------------------------------------------------
+|   Bowling Strike Rate	|  Total Innings Bowled by the bowler	| 	< 20	  |
+|			|	  to take a wicket		|		  |
+-----------------------------------------------------------------------------------
+
+5)SPECIALIST FAST BOWLERS(2 players) :
+
+-----------------------------------------------------------------------------------
+|	PARAMETER	|	DESCRIPTION			| 	CRITERIA  |
+-----------------------------------------------------------------------------------
+|   Innings Bowled	|  Total Innings Bowled by the bowler	| 	> 4	  |
+-----------------------------------------------------------------------------------
+|   Bowling Economy	|  Average runs allowed per over	| 	< 7 	  |
+-----------------------------------------------------------------------------------
+|   Bowling Strike Rate	|  Total Innings Bowled by the bowler	| 	< 15	  |
+|			|	  to take a wicket		|		  |
+-----------------------------------------------------------------------------------
+|   Bowling Style	|  Bowling style of the player		|    ="%Fast%"	  |
+-----------------------------------------------------------------------------------
+|   Bowling Average	| No. of runs allowed per wicket	| 	< 20 	  |
+-----------------------------------------------------------------------------------
+|   Dot Ball %		|  % of dot balls bowled		| 	> 40	  |
+-----------------------------------------------------------------------------------
+
+SUGGESTION : remove bowling style and dot ball %

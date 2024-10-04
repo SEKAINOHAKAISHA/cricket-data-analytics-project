@@ -1,0 +1,11 @@
+PG BG: 105959
+Containers/ Shapes BG: 1D1D2E
+Containers Borders: 105959
+Buttons and other elements: D0CF1D
+Highlights: E76B4C
+Visuals: F0E36F
+Text in Final 11 : 808080
+
+Shape of Lower Half : 
+	Height: 636
+	Width: 1280
